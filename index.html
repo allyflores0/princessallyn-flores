@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Princess Allyn | System Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-animation"></div>
+  
+  <!-- MAIN DASHBOARD -->
+  <div class="dashboard" id="dashboard">
+    <div class="dashboard-content">
+      <img src="assets/images/logo.png" alt="Logo" class="dashboard-logo">
+      <h1>ALLY.N</h1>
+      <p class="tagline"> • UI/UX Designer • </p>
+      <button class="enter-btn" onclick="enterPortfolio()">
+        <span>ENTER SYSTEM</span>
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="system">
+    <!-- Mobile hamburger -->
+    <button class="hamburger" aria-label="Open menu" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="mobileOverlay" class="mobile-overlay" onclick="closeSidebar()"></div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="logo">ally.n</h2>
+      <button onclick="showSection('about')">ABOUT</button>
+      <button onclick="showSection('projects')">PROJECTS</button>
+      <button onclick="showSection('skills')">SKILLS</button>
+      <button onclick="showSection('contact')">CONTACT</button>
+      <a href="resume.pdf" class="cv-btn" download>DOWNLOAD CV</a>
+    </aside>
+    
+    <!-- MAIN PANEL -->
+    <main class="panel">
+      <!-- ABOUT -->
+      <section id="about" class="section active">
+        <div class="profile-header">
+          <img src="assets/images/profile.png" alt="Princess Allyn Flores" class="profile-photo">
+          <div class="profile-info">
+            <h1>Princess Allyn Flores</h1>
+            <p class="subtitle">BSIT Student | UI/UX Designer | System Developer</p>
+          </div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="stat-card">
+            <div class="stat-number">3rd</div>
+            <div class="stat-label">Year BSIT</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Skills</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Passion</div>
+          </div>
+        </div>
+        
+        <div class="glass">
+          <h2 class="section-title">About Me</h2>
+          <p>
+            Hi! I'm Princess Allyn Flores, a 3rd-year college student passionate about technology and design. 
+            I enjoy learning and building projects that combine creativity with functionality.
+          </p>
+          <p style="margin-top: 20px;">
+            I'm a dedicated BSIT student with a passion for creating innovative solutions through technology. 
+            My journey in IT has equipped me with diverse skills in programming, web development, and problem-solving. 
+            I believe in continuous learning and staying updated with the latest technologies.
+          </p>
+          <p style="margin-top: 20px;">
+            My goal is to contribute to impactful projects that make a difference in people's lives. 
+            Interested in web development, UI/UX design, and system development. Continuously learning about 
+            programming, software development, and design principles. Open to collaboration on projects, 
+            internships, and research opportunities.
+          </p>
+        </div>
+
+        <div class="glass" style="margin-top: 30px;">
+          <h2 class="section-title">What I Do</h2>
+          <div class="services-grid">
+            <div class="service-item">
+              <img src="assets/images/icon-ui.png" alt="UI/UX Design" class="service-icon">
+              <h3>UI/UX Design</h3>
+              <p>Designing intuitive and beautiful user interfaces with Figma</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h1>System Projects</h1>
+        <div class="projects-grid">
+          <div class="card" onclick="openModal('project1')">
+            <div class="card-image">
+              <img src="assets/images/project-fifo.png" alt="FIFO-LRU Simulator">
+            </div>
+            <div class="card-content">
+              <h3>FIFO–LRU Simulator</h3>
+              <p>Advanced memory page replacement visualization using FIFO and LRU algorithms with real-time analytics.</p>
+              <div class="project-tags">
+                <span class="tag">Algorithm</span>
+                <span class="tag">Visualization</span>
+                <span class="tag">System</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal('project2')">
+            <div class="card-image">
+              <img src="assets/images/project-timeless.jpg" alt="Timeless Celebration">
+            </div>
+            <div class="card-content">
+              <h3>Timeless Celebration</h3>
+              <p>Figma-based event planning system featuring elegant UI flow and seamless user experience.</p>
+              <div class="project-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal('project3')">
+            <div class="card-image">
+              <img src="assets/images/project-ecoyou.jpg" alt="EcoYou">
+            </div>
+            <div class="card-content">
+              <h3>EcoYou</h3>
+              <p>Sustainability-focused mobile app prototype promoting eco-friendly lifestyle choices.</p>
+              <div class="project-tags">
+                <span class="tag">Mobile</span>
+                <span class="tag">Sustainability</span>
+                <span class="tag">Prototype</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal('project4')">
+            <div class="card-image">
+              <img src="assets/images/project-banking.jpg" alt="Banking System">
+            </div>
+            <div class="card-content">
+              <h3>Banking System</h3>
+              <p>Secure Java-based banking system with transaction management and multi-layer authentication.</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Security</span>
+                <span class="tag">Backend</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" onclick="openModal('project5')">
+            <div class="card-image">
+              <img src="assets/images/project-insideout.png" alt="InsideOut">
+            </div>
+            <div class="card-content">
+              <h3>InsideOut</h3>
+              <p>Creative PHP OOP program representing emotions using interfaces and polymorphism.</p>
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Creative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SKILLS -->
+      <section id="skills" class="section">
+        <h1>Skill Modules</h1>
+        <div class="skill-categories">
+          <div class="glass" style="margin-bottom: 30px;">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <img src="assets/images/skill-html.webp" alt="HTML" class="skill-icon">
+                <div class="skill-name">HTML</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skill-css.webp" alt="CSS" class="skill-icon">
+                <div class="skill-name">CSS</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skill-js.webp" alt="JavaScript" class="skill-icon">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skill-java.svg" alt="Java" class="skill-icon">
+                <div class="skill-name">Java</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skill-php.png" alt="PHP" class="skill-icon">
+                <div class="skill-name">PHP</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass">
+            <h2 class="section-title">Design Skills</h2>
+            <div class="skills-grid">
+              <div class="skill-card">
+                <img src="assets/images/skill-figma.webp" alt="Figma" class="skill-icon">
+                <div class="skill-name">Figma</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skill-uiux.png" alt="UI/UX" class="skill-icon">
+                <div class="skill-name">UI/UX</div>
+                <div class="skill-level">
+                  <div class="skill-progress" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h1>Get in Touch</h1>
+        <div class="contact-intro glass">
+          <img src="assets/images/contact-illustration.png" alt="Contact" class="contact-image">
+          <p>Have a project in mind or want to collaborate? Feel free to reach out! I'm always open to discussing new opportunities and interesting projects.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-card">
+            <img src="assets/images/icon-email.png" alt="Email" class="contact-icon">
+            <div class="contact-label">Email</div>
+            <div class="contact-info">princessallyn_flores@sjp2cd.edu.ph</div>
+          </div>
+          <div class="contact-card">
+            <img src="assets/images/icon-location.png" alt="Location" class="contact-icon">
+            <div class="contact-label">Location</div>
+            <div class="contact-info">Davao City, Philippines</div>
+          </div>
+          <div class="contact-card">
+            <img src="assets/images/icon-status.png" alt="Status" class="contact-icon">
+            <div class="contact-label">Status</div>
+            <div class="contact-info">Open to Opportunities</div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h2>Send a Message</h2>
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" name="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+          </form>
+        </div>
+        
+        <div class="social-links">
+          <a href="https://github.com/allyflores0" target="_blank" class="social-btn" title="GitHub">
+            <span>GH</span>
+          </a>
+          <a href="https://www.facebook.com/incesssszxc" target="_blank" class="social-btn" title="Facebook">
+            <span>FB</span>
+          </a>
+          <a href="https://www.instagram.com/_celest.ally" target="_blank" class="social-btn" title="Instagram">
+            <span>IG</span>
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <div class="modal-close" onclick="closeModal()">×</div>
+      <div class="modal-image" id="modalImage">
+        <img src="" alt="" id="modalImageSrc">
+      </div>
+      <div class="modal-body">
+        <h2 id="modalTitle">Project Title</h2>
+        <p id="modalDescription">Project description goes here...</p>
+        <div id="modalTags"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

@@ -248,11 +248,14 @@ navButtons.forEach(button => {
   });
 });
 
-// ==================== MOBILE SIDEBAR TOGGLE ====================
+/* ==================== MOBILE SIDEBAR TOGGLE ==================== */
 function toggleSidebar() {
   const sidebar = document.querySelector('.sidebar');
   const overlay = document.getElementById('mobileOverlay');
+  const hamburger = document.querySelector('.hamburger');
   const isOpen = sidebar.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  
   if (isOpen) {
     overlay.classList.add('visible');
     document.body.classList.add('sidebar-open');
@@ -265,7 +268,9 @@ function toggleSidebar() {
 function closeSidebar() {
   const sidebar = document.querySelector('.sidebar');
   const overlay = document.getElementById('mobileOverlay');
+  const hamburger = document.querySelector('.hamburger');
   sidebar.classList.remove('open');
+  hamburger.classList.remove('open');
   overlay.classList.remove('visible');
   document.body.classList.remove('sidebar-open');
 }
@@ -287,7 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img');
   images.forEach(img => {
     img.addEventListener('error', function() {
-      // Set a placeholder gradient background
       this.style.display = 'none';
       const parent = this.parentElement;
       if (parent) {

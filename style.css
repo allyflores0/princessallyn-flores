@@ -337,6 +337,7 @@ body {
     font-size: 1.8em;
     letter-spacing: 3px;
     text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
 @keyframes pulse {

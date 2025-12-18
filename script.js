@@ -3,8 +3,8 @@ const projects = {
   project1: {
     title: "FIFO–LRU Simulator",
     description: "An advanced memory page replacement visualization tool that demonstrates the FIFO (First-In-First-Out) and LRU (Least Recently Used) algorithms. This project features real-time analytics, interactive visualizations, and detailed performance comparisons between the two algorithms. Built with modern web technologies to provide an educational yet engaging experience for understanding operating system concepts.",
-    tags: ["Algorithm", "Visualization", "System", "Educational"],
-    image: "assets/images/project-fifo.jpg"
+    tags: ["Algorithm", "OOP", "System", "Educational"],
+    image: "assets/images/project-fifo.png"
   },
   project2: {
     title: "Timeless Celebration",
@@ -15,20 +15,27 @@ const projects = {
   project3: {
     title: "EcoYou",
     description: "A sustainability-focused mobile application prototype that helps users track their carbon footprint, discover eco-friendly alternatives, and participate in environmental challenges. Features include a personal sustainability dashboard, product scanning for eco-ratings, community engagement tools, and gamified challenges to promote sustainable living. Designed with a nature-inspired color palette and intuitive mobile-first interface.",
-    tags: ["Mobile", "Sustainability", "Prototype", "React Native"],
+    tags: ["Mobile", "Sustainability", "Prototype", "Visualization", "Figma"],
     image: "assets/images/project-ecoyou.jpg"
   },
   project4: {
     title: "Banking System",
     description: "A secure, full-featured banking system built with Java that implements core banking functionalities including account management, fund transfers, transaction history, and multi-layer authentication. The system features robust security measures including encrypted data storage, session management, and detailed audit logs. Built using OOP principles with a focus on scalability and maintainability.",
-    tags: ["Java", "Security", "Backend", "MySQL"],
-    image: "assets/images/project-banking.jpg"
+    tags: ["Java", "Security", "Backend", "OOP"],
+    image: "assets/images/project-bank-system.jpg"
   },
   project5: {
     title: "InsideOut",
     description: "An innovative PHP object-oriented programming project that creatively represents human emotions through code. Using interfaces and polymorphism, the program models different emotional states and their interactions, demonstrating advanced OOP concepts in a unique and engaging way. Features include emotion state management, mood tracking, and dynamic emotional responses based on various triggers.",
     tags: ["PHP", "OOP", "Creative", "Psychology"],
-    image: "assets/images/project-insideout.jpg"
+    image: "assets/images/project-insideout.png"
+  },
+  project6: {
+    title: "Whozzit Application",
+    description: "A mobile-based Lost and Found system designed for SJPIICD that allows users to report, track, and claim lost or found items. The application supports image uploads, admin verification, item matching, and secure claiming workflows using Firebase.",
+
+    tags: ["Android Studio", "Kotlin", "Firebase", "ImgBB"],
+    image: "assets/images/project-whozzit.png"
   }
 };
 

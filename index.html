@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,18 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+  <!-- Add this right after <body> tag and before <div class="bg-animation"> -->
+  <button class="hamburger" aria-label="Open menu" onclick="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div id="mobileOverlay" class="mobile-overlay" onclick="closeSidebar()"></div>
   <div class="bg-animation"></div>
-  
+
   <!-- MAIN DASHBOARD -->
   <div class="dashboard" id="dashboard">
     <div class="dashboard-content">
@@ -21,8 +31,8 @@
       </button>
     </div>
   </div>
-  
-  
+
+
   <div class="system">
     <!-- Mobile hamburger -->
     <button class="hamburger" aria-label="Open menu" onclick="toggleSidebar()">
@@ -40,7 +50,7 @@
       <button onclick="showSection('contact')">CONTACT</button>
       <a href="resume.pdf" class="cv-btn" download>DOWNLOAD CV</a>
     </aside>
-    
+
     <!-- MAIN PANEL -->
     <main class="panel">
       <!-- ABOUT -->
@@ -52,7 +62,7 @@
             <p class="subtitle">BSIT Student | UI/UX Designer | System Developer</p>
           </div>
         </div>
-        
+
         <div class="about-grid">
           <div class="stat-card">
             <div class="stat-number">3rd</div>
@@ -71,22 +81,22 @@
             <div class="stat-label">Passion</div>
           </div>
         </div>
-        
+
         <div class="glass">
           <h2 class="section-title">About Me</h2>
           <p>
-            Hi! I'm Princess Allyn Flores, a 3rd-year college student passionate about technology and design. 
+            Hi! I'm Princess Allyn Flores, a 3rd-year college student passionate about technology and design.
             I enjoy learning and building projects that combine creativity with functionality.
           </p>
           <p style="margin-top: 20px;">
-            I'm a dedicated BSIT student with a passion for creating innovative solutions through technology. 
-            My journey in IT has equipped me with diverse skills in programming, web development, and problem-solving. 
+            I'm a dedicated BSIT student with a passion for creating innovative solutions through technology.
+            My journey in IT has equipped me with diverse skills in programming, web development, and problem-solving.
             I believe in continuous learning and staying updated with the latest technologies.
           </p>
           <p style="margin-top: 20px;">
-            My goal is to contribute to impactful projects that make a difference in people's lives. 
-            Interested in web development, UI/UX design, and system development. Continuously learning about 
-            programming, software development, and design principles. Open to collaboration on projects, 
+            My goal is to contribute to impactful projects that make a difference in people's lives.
+            Interested in web development, UI/UX design, and system development. Continuously learning about
+            programming, software development, and design principles. Open to collaboration on projects,
             internships, and research opportunities.
           </p>
         </div>
@@ -102,7 +112,7 @@
           </div>
         </div>
       </section>
-      
+
       <!-- PROJECTS -->
       <section id="projects" class="section">
         <h1>System Projects</h1>
@@ -113,7 +123,8 @@
             </div>
             <div class="card-content">
               <h3>FIFO–LRU Simulator</h3>
-              <p>Advanced memory page replacement visualization using FIFO and LRU algorithms with real-time analytics.</p>
+              <p>Advanced memory page replacement visualization using FIFO and LRU algorithms with real-time analytics.
+              </p>
               <div class="project-tags">
                 <span class="tag">Algorithm</span>
                 <span class="tag">Visualization</span>
@@ -151,7 +162,7 @@
           </div>
           <div class="card" onclick="openModal('project4')">
             <div class="card-image">
-              <img src="assets/images/project-banking.jpg" alt="Banking System">
+              <img src="assets/images/project-bank-system.jpg" alt="Banking System">
             </div>
             <div class="card-content">
               <h3>Banking System</h3>
@@ -177,9 +188,30 @@
               </div>
             </div>
           </div>
+          <div class="card" onclick="openModal('project6')">
+            <div class="card-image">
+              <img src="assets/images/project-whozzit.png" alt="Whozzit Application">
+            </div>
+            <div class="card-content">
+              <h3>Lost and Found System</h3>
+              <p>
+                A mobile-based Lost and Found application designed to streamline the reporting, tracking, and claiming
+                of lost and found items within an our school, SJPIICD. The system enables users to submit item details
+                with
+                images, while administrators manage approvals, matches, and claims through a secure and organized
+                workflow.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Android Studio</span>
+                <span class="tag">Kotlin</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">ImgBB</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      
+
       <!-- SKILLS -->
       <section id="skills" class="section">
         <h1>Skill Modules</h1>
@@ -224,7 +256,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="glass">
             <h2 class="section-title">Design Skills</h2>
             <div class="skills-grid">
@@ -246,15 +278,16 @@
           </div>
         </div>
       </section>
-      
+
       <!-- CONTACT -->
       <section id="contact" class="section">
         <h1>Get in Touch</h1>
         <div class="contact-intro glass">
           <img src="assets/images/contact-illustration.png" alt="Contact" class="contact-image">
-          <p>Have a project in mind or want to collaborate? Feel free to reach out! I'm always open to discussing new opportunities and interesting projects.</p>
+          <p>Have a project in mind or want to collaborate? Feel free to reach out! I'm always open to discussing new
+            opportunities and interesting projects.</p>
         </div>
-        
+
         <div class="contact-grid">
           <div class="contact-card">
             <img src="assets/images/icon-email.png" alt="Email" class="contact-icon">
@@ -272,7 +305,7 @@
             <div class="contact-info">Open to Opportunities</div>
           </div>
         </div>
-        
+
         <div class="contact-form">
           <h2>Send a Message</h2>
           <form onsubmit="handleSubmit(event)">
@@ -295,7 +328,7 @@
             <button type="submit" class="submit-btn">SEND MESSAGE</button>
           </form>
         </div>
-        
+
         <div class="social-links">
           <a href="https://github.com/allyflores0" target="_blank" class="social-btn" title="GitHub">
             <span>GH</span>
@@ -310,7 +343,7 @@
       </section>
     </main>
   </div>
-  
+
   <!-- PROJECT MODAL -->
   <div class="modal" id="projectModal">
     <div class="modal-content">
@@ -325,7 +358,8 @@
       </div>
     </div>
   </div>
-  
+
   <script src="script.js"></script>
 </body>
+
 </html>
